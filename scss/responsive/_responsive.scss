@@ -8,6 +8,12 @@
             }
         }
     }
+
+    #works {
+        .button {
+            margin: 375px 0 50px 100px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -133,7 +139,7 @@
 
     #works {
         .title {
-            padding: 0 0 300px;
+            padding: 0;
             overflow: auto;
             height: 100%;
 
@@ -143,6 +149,10 @@
 
             .text-title {
                 display: none;
+            }
+
+            .button {
+                margin: 282px 0 50px 100px;
             }
         }
 
