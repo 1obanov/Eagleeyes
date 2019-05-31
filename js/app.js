@@ -93,12 +93,22 @@
     });
 
     /*--------- Mobile menu ---------*/
-    $("#menu-button, .navbar-nav a").on("click", function (e) {
-        e.preventDefault();
+    if (window.matchMedia('(max-width: 823px)').matches) {
+        $("#menu-button, .navbar-nav a").on("click", function (e) {
+            e.preventDefault();
 
-        $("#menu-button, .navbar").toggleClass("pushed-left");
-        $(".navbar").slideToggle("block");
-    });
+            $("#menu-button, .navbar").toggleClass("pushed-left");
+            $(".navbar").slideToggle("block");
+        });
+    }
+
+    /*--------- Mobile menu ---------*/
+    // $("#menu-button, .navbar-nav a").on("click", function (e) {
+    //     e.preventDefault();
+
+    //     $("#menu-button, .navbar").toggleClass("pushed-left");
+    //     $(".navbar").slideToggle("block");
+    // });
 
     /*--------- Teams section ---------*/
     function initTeamTab() {
